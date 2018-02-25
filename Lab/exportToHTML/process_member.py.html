@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>process_member.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(204,120,50); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(98,151,85); font-style: italic; }
+.s3 { color: rgb(106,135,89); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+process_member.py</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">from </span><span class="s1">member </span><span class="s0">import </span><span class="s1">Member</span><span class="s0">, </span><span class="s1">MemberClub 
+ 
+ 
+</span><span class="s0">class </span><span class="s1">ProcessMember(object): 
+    </span><span class="s2">&quot;&quot;&quot; 
+        This class manages all the required operation to manage the club. 
+    &quot;&quot;&quot;</span><span class="s1"> 
+    EXIT_PROGRAM = </span><span class="s3">&quot;quit&quot;</span><span class="s1"> 
+ 
+    </span><span class="s0">def </span><span class="s1">__init__(self</span><span class="s0">, </span><span class="s1">club_member): 
+        self.club_member = club_member 
+        self.methods = {</span><span class="s3">&quot;1&quot;</span><span class="s1">: self._add</span><span class="s0">, </span><span class="s3">&quot;2&quot;</span><span class="s1">: self._view_member_info</span><span class="s0">, </span><span class="s3">&quot;3&quot;</span><span class="s1">: self._search_member</span><span class="s0">,</span><span class="s1"> 
+                        </span><span class="s3">&quot;4&quot;</span><span class="s1">: self._display_member</span><span class="s0">, </span><span class="s3">&quot;5&quot;</span><span class="s1">: self._update_member_info</span><span class="s0">,</span><span class="s1"> 
+                        </span><span class="s3">&quot;6&quot;</span><span class="s1">: self._remove_member</span><span class="s0">, </span><span class="s3">&quot;7&quot;</span><span class="s1">: self._quit} 
+ 
+    </span><span class="s0">def </span><span class="s1">run_process(self): 
+        </span><span class="s0">while True</span><span class="s1">: 
+            member_name = input(</span><span class="s3">&quot;Enter member name: &quot;</span><span class="s1">) 
+            </span><span class="s0">if </span><span class="s1">member_name == </span><span class="s3">&quot;quit&quot;</span><span class="s1">: 
+                </span><span class="s0">break</span><span class="s1"> 
+            member_id = input(</span><span class="s3">&quot;Enter member id: &quot;</span><span class="s1">) 
+            </span><span class="s0">if </span><span class="s1">Member.get_name != member_name: 
+                print(</span><span class="s3">&quot;Member does not exist&quot;</span><span class="s1">) 
+            </span><span class="s0">elif </span><span class="s1">Member.get_id != member_id: 
+                print(</span><span class="s3">&quot;Member with &quot; </span><span class="s1">+ member_id + </span><span class="s3">&quot; does not exist.&quot;</span><span class="s1">) 
+            </span><span class="s0">else</span><span class="s1">: 
+                self.process_club_members() 
+ 
+    </span><span class="s0">def </span><span class="s1">process_club_members(self): 
+ 
+        </span><span class="s0">while True</span><span class="s1">: 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">) 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">) 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">) 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">) 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">)  </span><span class="s0">,</span><span class="s1">bbb v vn /i9 
+            print(</span><span class="s3">&quot;1 Add new member&quot;</span><span class="s1">).;oyt 
+</span></pre>
+</body>
+</html>
